@@ -1,0 +1,28 @@
+/* Add application styles & imports to this file! */
+@import '~@angular/material/prebuilt-themes/pink-bluegrey.css';
+
+.tt{
+  background: url('https://kousigan.github.io/eventz03/assets/Terrific-tigers@2x.png') no-repeat;
+}
+.cc{
+  background: url('https://kousigan.github.io/eventz03/assets/chennai-cheetas@2x.png') no-repeat;
+}
+.mm{
+  background: url('https://kousigan.github.io/eventz03/assets/madras-mynas@2x.png') no-repeat;
+}
+.rw{
+  background: url('https://kousigan.github.io/eventz03/assets/rhino-warriors@2x.png') no-repeat;
+}
+.rr{
+  background: url('https://kousigan.github.io/eventz03/assets/rowdy-roosters@2x.png') no-repeat;
+}
+
+.bg-small{
+  background-size: 100px;
+}
+.bg-med{
+  background-size: 100px;
+}
+.bg-large{
+  background-size: 100px;
+}

@@ -9,10 +9,9 @@ import { HelloComponent } from './hello.component';
 import { AppRoutingModule } from './app.routing.module';
 import { EventzModule } from './eventz/eventz.module';
 
-import { MatToolbarModule } from '@angular/material';
+ 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, BrowserAnimationsModule,  AppRoutingModule,
-   MatToolbarModule,
    ],
   declarations: [ AppComponent, HelloComponent ],
   bootstrap:    [ AppComponent ]
