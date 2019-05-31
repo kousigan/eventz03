@@ -1,8 +1,8 @@
 <mat-toolbar color="primary">
-       <button mat-button (click)="drawer.toggle()">
+	<button mat-button (click)="drawer.toggle()">
          <mat-icon aria-hidden="false" aria-label="icon" >menu</mat-icon>
        </button>
-  <span>Eventz</span>
+  <span routerLink="home">Eventz</span>
   <span class="example-spacer"></span>
   <button mat-button [matMenuTriggerFor]="menu">
     <mat-icon aria-hidden="false" aria-label="icon">cake</mat-icon>
@@ -18,8 +18,7 @@
 </mat-toolbar>
 <mat-sidenav-container>
   <mat-sidenav mode="side" #drawer>Start</mat-sidenav>
-  <mat-sidenav-content>Main</mat-sidenav-content>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
 </mat-sidenav-container>
-
-
- 

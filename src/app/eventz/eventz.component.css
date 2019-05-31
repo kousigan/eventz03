@@ -10,3 +10,6 @@
   display: flex;
   height: 100%;
 }
+.mat-drawer-content{
+  width:100%;
+}

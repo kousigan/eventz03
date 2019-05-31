@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EventzService } from './eventz.service';
 
 @Component({
   selector: 'app-eventz',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EventzComponent implements OnInit {
 
-  constructor() { }
+  constructor(private eventz:EventzService) { }
 
   ngOnInit() {
+     
   }
 
 }
