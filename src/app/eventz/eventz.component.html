@@ -2,17 +2,20 @@
 	<button mat-button (click)="drawer.toggle()">
          <mat-icon aria-hidden="false" aria-label="icon" >menu</mat-icon>
        </button>
-  <span routerLink="home">Eventz</span>
+  <span >Eventz</span>
   <span class="example-spacer"></span>
   <button mat-button [matMenuTriggerFor]="menu">
     <mat-icon aria-hidden="false" aria-label="icon">cake</mat-icon>
   </button>
   <mat-menu #menu="matMenu">
-    <button mat-menu-item >
+    <button mat-menu-item routerLink="home" >
       <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
-      Item 1
+      Home
       </button>
-   
+    <button mat-menu-item routerLink="addevent" >
+      <mat-icon aria-hidden="false" aria-label="Example home icon">library_add</mat-icon>
+      Add event
+      </button>
   </mat-menu>
 
 </mat-toolbar>

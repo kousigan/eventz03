@@ -1,10 +1,12 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
+import { BehaviorSubject } from 'rxjs'; 
 
 @Injectable()
 export class EventzService {
 
- 
+ EventList = new BehaviorSubject(null);
+
   constructor(private fstore: AngularFirestore ) { 
     this.getStud().subscribe(actionArray => {
       let list = actionArray.map(item => {
@@ -14,15 +16,18 @@ export class EventzService {
         } as any;
         
       })
-      console.log(list)
+      this.EventList.next(list);
     });
   }
   getStud(){
-    return  this.fstore.collection('stud').snapshotChanges()
+    return  this.fstore.collection('eventz').snapshotChanges()
   }
 
   addStud(stud){
     return this.fstore.collection('stud').add(stud);
   }
-  
+
+  addEvent(event){
+    return this.fstore.collection('eventz').add(event);
+  }
 }

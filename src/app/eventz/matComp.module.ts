@@ -7,7 +7,8 @@ import {
   MatIconModule,
   MatSidenavModule,
   MatTreeModule,
-  MatCardModule
+  MatCardModule,
+  MatInputModule
   } from '@angular/material'; 
 
 @NgModule({
@@ -20,7 +21,8 @@ import {
     MatIconModule ,
     MatSidenavModule,
     MatTreeModule,
-    MatCardModule
+    MatCardModule,
+    MatInputModule
   ],
 })
 export class MatCompModule {}

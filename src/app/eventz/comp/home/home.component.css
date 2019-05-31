@@ -1,4 +1,10 @@
-.mat-card{
-  max-width: 1000px;
-margin: 50px auto;
+.mat-card-image {
+  height: 250px;
+  object-fit: cover;
+}
+.mat-card-actions {
+  display:flex;
+}
+.example-spacer {
+  flex: 1 1 auto;
 }
