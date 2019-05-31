@@ -1,26 +1,25 @@
 <mat-toolbar color="primary">
+       <button mat-button>
+         <mat-icon aria-hidden="false" aria-label="icon" (click)="drawer.toggle()">menu</mat-icon>
+       </button>
   <span>Eventz</span>
   <span class="example-spacer"></span>
-  <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+  <button mat-button [matMenuTriggerFor]="menu">
+    <mat-icon aria-hidden="false" aria-label="icon">cake</mat-icon>
+  </button>
   <mat-menu #menu="matMenu">
-    <button mat-menu-item>Item 1</button>
-    <button mat-menu-item>Item 2</button>
+    <button mat-menu-item >
+      <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+      Item 1
+      </button>
+   
   </mat-menu>
 
 </mat-toolbar>
+<mat-sidenav-container>
+  <mat-sidenav mode="side" #drawer>Start</mat-sidenav>
+  <mat-sidenav-content>Main</mat-sidenav-content>
+</mat-sidenav-container>
 
-<mat-toolbar color="primary">
-  <mat-toolbar-row>
-    <span>Custom Toolbar</span>
-  </mat-toolbar-row>
 
-  <mat-toolbar-row>
-    <span>Second Line</span>
-    <span class="example-spacer"></span>
-<mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
-
-  </mat-toolbar-row>
  
-</mat-toolbar>
-
-<mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>

@@ -1,1 +1,12 @@
- 
+.example-spacer {
+  flex: 1 1 auto;
+}
+:host{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.mat-drawer-container{
+  display: flex;
+  height: 100%;
+}
