@@ -21,7 +21,7 @@ import { ViewEventComponent } from './comp/view-event/view-event.component';
     EventzComponent,
     HomeComponent,
     AddEventComponent,
-     
+    ViewEventComponent
   ],
   providers: [
     EventzService

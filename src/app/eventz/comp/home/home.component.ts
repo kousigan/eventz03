@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
   }
   viewEvent(i){
     console.log(i)
-  // this.router.navigate(['eventz/viewevent'])
+  this.router.navigate(['eventz/viewevent'])
    }
   ngOnInit() {
   }
